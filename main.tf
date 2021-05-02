@@ -44,7 +44,7 @@ resource "aws_instance" "ubuntu" {
   instance_type = "t2.small"
 
   tags = {
-    Name = "ubuntu"
+    Name = "terraform-demo-aws"
   }
 
   vpc_security_group_ids = [
