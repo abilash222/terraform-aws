@@ -41,7 +41,7 @@ resource "aws_security_group" "ubuntu" {
 
 resource "aws_instance" "ubuntu" {
   ami           = "ami-01581ffba3821cdf3"
-  instance_type = "t2.micro"
+  instance_type = "t2.small"
 
   tags = {
     Name = "ubuntu"
