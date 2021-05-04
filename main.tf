@@ -42,6 +42,7 @@ resource "aws_security_group" "ubuntu" {
 resource "aws_instance" "ubuntu" {
   ami           = "ami-01581ffba3821cdf3"
   instance_type = "t2.small"
+  key_name = "terraform-abilash"
 
   tags = {
     Name = "terraform-demo-aws"
