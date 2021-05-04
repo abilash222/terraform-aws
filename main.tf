@@ -98,3 +98,7 @@ runcmd:
 - cp /usr/share/app/index.html /var/www/html/index.nginx-debian.html
 EOT
 }
+
+output "aws-nginx-ip" {
+  value = aws_instance.ubuntu.public_ip
+}
