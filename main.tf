@@ -41,7 +41,7 @@ resource "aws_security_group" "ubuntu" {
 
 resource "aws_instance" "ubuntu" {
   ami           = "ami-01581ffba3821cdf3"
-  instance_type = "t2.small"
+  instance_type = "t2.micro"
   key_name = "terraform-abilash"
 
   tags = {
@@ -95,6 +95,6 @@ write_files:
   path: /usr/share/app/index.html
   permissions: '0644'
 runcmd:
-- cp /usr/share/app/index.html /usr/share/nginx/html/index.html
+- cp /usr/share/app/index.html /var/www/html/index.nginx-debian.html
 EOT
 }
