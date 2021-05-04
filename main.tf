@@ -89,7 +89,7 @@ write_files:
     </head>
     <body>
       <img src="https://www.stackpath.com/content/images/logo-and-branding/stackpath-logo-standard-screen.svg">
-      <p>This request was proxied from <strong>Amazon Web Services</strong></p>
+      <p>Ashnik Demo - This request was proxied from <strong>Amazon Web Services</strong></p>
     </body>
     </html>
   path: /usr/share/app/index.html
